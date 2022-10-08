@@ -1,0 +1,44 @@
+.container {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cabecalho-central {
+  background-color: lightgray;
+  width: 60%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.caixa-menu {
+  background-color: blueviolet;
+  width: 20%;
+  height: 100%;
+}
+
+.stories {
+  background-color: palevioletred;
+  height: 118px;
+}
+
+.container-principal {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 300px;
+}
+
+.sidebar {
+  background-color: black;
+  width: 35%;
+}
+
+.container-central {
+  background-color: brown;
+  width: 65%;
+}
