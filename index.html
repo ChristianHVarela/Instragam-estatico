@@ -11,20 +11,281 @@
     />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <title>Instagram</title>
   </head>
   <body>
     <div class="container">
-      <div class="cabecalho-central">
-        <div class="caixa-menu"></div>
-        <div class="caixa-menu"></div>
-        <div class="caixa-menu"></div>
+      <div class="cabecalho">
+        <div class="cabecalho-central">
+          <div class="caixa-menu-esquerda">
+            <a class="link-icon-cabecalho" href="/">
+              <ion-icon class="icon-instagram" name="logo-instagram"></ion-icon>
+            </a>
+            <div class="linha-icon-instagram"></div>
+            <a href="/">
+              <img src="./assets/logo.png" />
+            </a>
+          </div>
+          <div class="caixa-menu-central">
+            <input
+              class="input-pesquisar"
+              type="text"
+              placeholder="Pesquisar"
+            />
+          </div>
+          <div class="caixa-menu-direita">
+            <a class="link-icon-cabecalho" href="/">
+              <ion-icon
+                class="icon-cabecalho"
+                name="paper-plane-outline"
+              ></ion-icon>
+            </a>
+            <a class="link-icon-cabecalho" href="/">
+              <ion-icon
+                class="icon-cabecalho"
+                name="compass-outline"
+              ></ion-icon>
+            </a>
+            <a class="link-icon-cabecalho" href="/">
+              <ion-icon class="icon-cabecalho" name="heart-outline"></ion-icon>
+            </a>
+            <a class="link-icon-cabecalho" href="/">
+              <ion-icon class="icon-cabecalho" name="person-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="container-principal">
         <div class="container-central">
-          <div class="stories"></div>
+          <div class="container-feed-stories">
+            <div class="stories">
+              <div class="stories-caixa">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/osvaldo.png" />
+                </div>
+                <p class="subtitle-story">Oswaldo</p>
+              </div>
+              <div class="stories-caixa">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/gleidisom.png" />
+                </div>
+                <p class="subtitle-story">Gleidisom</p>
+              </div>
+              <div class="stories-caixa">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/juvenal.png" />
+                </div>
+                <p class="subtitle-story">Juvenal</p>
+              </div>
+              <div class="stories-caixa">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/claudio.png" />
+                </div>
+                <p class="subtitle-story">Claudio</p>
+              </div>
+              <div class="stories-caixa">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/francisco.png" />
+                </div>
+                <p class="subtitle-story">Francisco</p>
+              </div>
+              <div class="stories-caixa">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/jose.png" />
+                </div>
+                <p class="subtitle-story">José</p>
+              </div>
+              <div class="stories-caixa">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/juvenildo.png" />
+                </div>
+                <p class="subtitle-story">Juvenildo</p>
+              </div>
+              <div class="stories-caixa-seta">
+                <div class="stories-unico">
+                  <img class="storie-image" src="./assets/edegar.png" />
+                </div>
+                <p class="subtitle-story">Edegar</p>
+                <div class="caixa-icon-stories">
+                  <ion-icon
+                    class="icon-stories"
+                    name="chevron-forward-circle-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+            <!-- POST -->
+            <div class="post margin-story">
+              <div class="post-cabecalho">
+                <div class="post-cabecalho-esquerda">
+                  <img class="post-image-perfil" src="./assets/edegar.png" />
+                  <p class="post-nome-perfil">Edegar</p>
+                </div>
+                <div class="post-cabecalho-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="ellipsis-horizontal-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <img class="post-image" src="./assets/edegar.png" />
+              <div class="post-gear">
+                <div class="post-gear-esquerda">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="heart-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="chatbubble-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="paper-plane-outline"
+                  ></ion-icon>
+                </div>
+                <div class="post-gear-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="bookmark-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="post-info">
+                <img class="post-info-image" src="./assets/tom-durinho.png" />
+                <p class="post-info-texto">Curtido por <span class="post-info-texto-negrito">TomDurinho</span> e <span class="post-info-texto-negrito">outras 100.190 pessoas</span></stron></p>
+              </div>
+            </div>
+
+            <div class="post margin-post">
+              <div class="post-cabecalho">
+                <div class="post-cabecalho-esquerda">
+                  <img class="post-image-perfil" src="./assets/edegar.png" />
+                  <p class="post-nome-perfil">Edegar</p>
+                </div>
+                <div class="post-cabecalho-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="ellipsis-horizontal-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <img class="post-image" src="./assets/edegar.png" />
+              <div class="post-gear">
+                <div class="post-gear-esquerda">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="heart-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="chatbubble-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="paper-plane-outline"
+                  ></ion-icon>
+                </div>
+                <div class="post-gear-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="bookmark-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="post-info">
+                <img class="post-info-image" src="./assets/tom-durinho.png" />
+                <p class="post-info-texto">Curtido por <span class="post-info-texto-negrito">TomDurinho</span> e <span class="post-info-texto-negrito">outras 100.190 pessoas</span></stron></p>
+              </div>
+            </div>
+
+            <div class="post margin-post">
+              <div class="post-cabecalho">
+                <div class="post-cabecalho-esquerda">
+                  <img class="post-image-perfil" src="./assets/edegar.png" />
+                  <p class="post-nome-perfil">Edegar</p>
+                </div>
+                <div class="post-cabecalho-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="ellipsis-horizontal-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <img class="post-image" src="./assets/edegar.png" />
+              <div class="post-gear">
+                <div class="post-gear-esquerda">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="heart-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="chatbubble-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="paper-plane-outline"
+                  ></ion-icon>
+                </div>
+                <div class="post-gear-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="bookmark-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="post-info">
+                <img class="post-info-image" src="./assets/tom-durinho.png" />
+                <p class="post-info-texto">Curtido por <span class="post-info-texto-negrito">TomDurinho</span> e <span class="post-info-texto-negrito">outras 100.190 pessoas</span></stron></p>
+              </div>
+            </div>
+
+            <div class="post margin-post">
+              <div class="post-cabecalho">
+                <div class="post-cabecalho-esquerda">
+                  <img class="post-image-perfil" src="./assets/edegar.png" />
+                  <p class="post-nome-perfil">Edegar</p>
+                </div>
+                <div class="post-cabecalho-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="ellipsis-horizontal-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <img class="post-image" src="./assets/edegar.png" />
+              <div class="post-gear">
+                <div class="post-gear-esquerda">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="heart-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="chatbubble-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="paper-plane-outline"
+                  ></ion-icon>
+                </div>
+                <div class="post-gear-direita">
+                  <ion-icon
+                    class="icon-cabecalho"
+                    name="bookmark-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="post-info">
+                <img class="post-info-image" src="./assets/tom-durinho.png" />
+                <p class="post-info-texto">Curtido por <span class="post-info-texto-negrito">TomDurinho</span> e <span class="post-info-texto-negrito">outras 100.190 pessoas</span></stron></p>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar"></div>
         </div>
-        <div class="sidebar"></div>
       </div>
     </div>
   </body>
