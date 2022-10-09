@@ -20,6 +20,10 @@ body {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #dbdbdb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .cabecalho-central {
@@ -165,19 +169,14 @@ body {
   flex-direction: row;
   width: 100%;
   max-width: 904px;
-  margin-top: 34px;
-}
-
-.sidebar {
-  background-color: black;
-  width: 100%;
-  max-width: 293px;
+  margin-top: 88px;
 }
 
 .container-central {
   width: 100%;
   max-width: 614px;
   height: 100%;
+  display: flex;
 }
 
 .container-feed-stories {
@@ -287,4 +286,211 @@ body {
 
 .margin-post {
   margin-top: 60px;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 293px;
+  margin-left: 29px;
+  position: sticky;
+  top: 120px;
+}
+
+.sidebar-cabecalho {
+  display: flex;
+  width: 293px;
+  margin-top: 25px;
+}
+
+.sidebar-image-perfil {
+  width: 56px;
+  height: 56px;
+  background-image: url("./assets/edegar.png");
+  background-size: 56px;
+  border-radius: 50%;
+}
+
+.sidebar-name-nickname {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 17px;
+}
+
+.nickname {
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 2px;
+  color: #8e8e8e;
+}
+
+.sidebar-entrelinhas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.sidebar-entrelinhas-esquerda {
+  font-weight: 500;
+  font-size: 12px;
+  color: #8e8e8e;
+  width: 117px;
+}
+
+.sidebar-entrelinhas-direita {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: right;
+  color: #262626;
+  width: 55px;
+}
+
+.sidebar-sugestoes-image {
+  width: 32px;
+  height: 32px;
+  background-image: url("./assets/tom-durinho.png");
+  background-size: 32px;
+  border-radius: 50%;
+}
+
+.sidebar-sugestoes-nickname {
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+}
+
+.sidebar-sugestoes-info {
+  font-weight: 400;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.sidebar-sugestoes-nickname-info {
+  margin-left: 11px;
+  margin-top: 4px;
+}
+
+.sidebar-sugestoes-seguir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-seguir {
+  text-decoration: none;
+  float: right;
+  font-weight: 500;
+  font-size: 12px;
+  color: #139ef2;
+  margin-top: 5px;
+}
+
+.sidebar-sugestoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.sidebar-sugestoes-esquerda {
+  display: flex;
+}
+
+.sidebar-info-texto {
+  font-weight: 400;
+  font-size: 11px;
+  color: #c7c7c7;
+  margin-bottom: 18px;
+  line-height: 13px;
+}
+
+.sidebar-info {
+  margin-top: 33px;
+}
+
+.caixa-menu-escondida {
+  display: none;
+}
+
+@media (max-width: 935px) {
+  .sidebar {
+    display: none;
+  }
+
+  .container-principal {
+    max-width: 614px;
+  }
+
+  .cabecalho-central {
+    max-width: 935px;
+  }
+}
+
+@media (max-width: 614px) {
+  .container-principal {
+    max-width: 614px;
+  }
+
+  .compass {
+    display: none;
+  }
+
+  .heart {
+    display: none;
+  }
+
+  .person {
+    display: none;
+  }
+
+  .caixa-menu-direita {
+    width: 5%;
+    margin-left: 220px;
+  }
+
+  .caixa-menu-esquerda {
+    width: 5%;
+  }
+
+  .container-central {
+    max-width: 614px;
+  }
+
+  .stories {
+    max-width: 614px;
+    background-color: #fafafa;
+    border: 0px solid;
+  }
+
+  .caixa-menu-central {
+    display: none;
+  }
+
+  .cabecalho-central {
+    justify-content: initial;
+  }
+
+  .caixa-menu-escondida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+  }
+
+  .caixa-menu-descondida {
+    display: none;
+  }
+
+  .linha-icon-instagram {
+    display: none;
+  }
+
+  .caixa-icon-stories {
+    display: none;
+  }
 }
